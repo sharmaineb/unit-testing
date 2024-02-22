@@ -390,4 +390,3 @@ Submit **exercises 2, 3 and 4** at [Unit Testing 1](https://www.gradescope.com/c
 ](https://docs.pytest.org/en/stable/getting-started.html#getstarted)
 1. 'Python Testing with pytest' book by Brian Okken.
 1. [semaphoreci](https://semaphoreci.com/community/tutorials/testing-python-applications-with-pytest)
-# unit-testing
