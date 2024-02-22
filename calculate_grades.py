@@ -16,14 +16,17 @@ def read_input():
     grade_list = []
     n_student = 5
     for _ in range(0, n_student):
-        grade_list.append(int(input('Enter a number: ')))
+        try:
+            grade_list.append(int(input('Enter a number: ')))
+        except ValueError:
+            print('You need to enter a number!')
     return grade_list
 
 def calculate_stat(grade_list):
     """Calculate the mean and standard deviation of the grades."""
     total = 0
     for grade in grade_list:
-        total = total + grade
+        total += grade
     mean = total / len(grade_list)
     sum_of_sqrs = 0
     for grade in grade_list:
@@ -38,4 +41,4 @@ def print_stat(mean, sd):
     print('The population standard deviation of grades is: ', round(sd, 3))
     print('****** END ******')
 
-display_grade_stat()
+# display_grade_stat()

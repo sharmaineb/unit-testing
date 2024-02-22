@@ -15,4 +15,6 @@ def get_age_carbon_14_dating(carbon_14_ratio):
     in the sample conpared to the amount in living
     tissue (unitless).
     """
+    if carbon_14_ratio > 1.0 or carbon_14_ratio <= 0:
+        return float('NaN')
     return math.log(carbon_14_ratio) / DECAY_CONSTANT * T_HALF
